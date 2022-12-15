@@ -105,6 +105,12 @@ a {
 
 
 /* navbar rules */
+.hero-banner {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
 .bg-header {
     background-color: #255ee9;
 }
