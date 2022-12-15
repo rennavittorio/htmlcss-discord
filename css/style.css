@@ -5,11 +5,17 @@
     box-sizing: border-box;
 }
 
-img {
+img, svg {
     max-width: 100%;
 }
 
+ul, ol, li, menu {
+    list-style: none;
+}
+
 /* fine reset rules */
+
+
 
 /* debugging section */
 .debug .container {
@@ -28,18 +34,55 @@ img {
 
 /* fine debugging section */
 
-/* high-level layout rules */
-.full-container {
-    background-color: lightgrey;
+
+
+/* general rules */
+.row {
+    display: flex;
 }
 
+.row.reverse {
+    flex-direction: row-reverse;
+}
+/* fine general rules */
+
+
+
+/* navbar rules */
+.row.row-header {
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 50px;
+}
+
+.row.row-header > .col {
+    flex-basis: 100px;
+}
+
+.row.row-header > .col-nav {
+    flex-grow: 1;
+}
+
+.ul-nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.login-button {
+    text-align: center;
+    line-height: 25px;
+    border: 1px solid black;
+    width: 100%;
+    height: 25px;
+    border-radius: 50px 50px;
+}
+/* fine navbar rules */
+
+
+/* high-level layout rules */
 .container {
     max-width: 900px;
     margin: 0 auto;
-    padding: 15px;
-}
-
-.row, .col {
     padding: 15px;
 }
 
@@ -49,14 +92,6 @@ img {
 
 .home-footer {
     min-height: 250px;
-}
-
-.row {
-    display: flex;
-}
-
-.row.reverse {
-    flex-direction: row-reverse;
 }
 /* fine layout rules */
 
@@ -80,11 +115,6 @@ img {
 
 .row-header{
     justify-content: center;
-}
-
-.row-header > .col {
-    flex-basis: 700px;
-    min-height: 200px;
 }
 /* fine layout header */
 
