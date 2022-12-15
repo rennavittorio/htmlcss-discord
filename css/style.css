@@ -65,6 +65,7 @@ ul, ol, li, menu {
 
 .button {
     text-align: center;
+    font-size: 12px;
     line-height: 0;
     border: 1px solid black;
     height: 25px;
