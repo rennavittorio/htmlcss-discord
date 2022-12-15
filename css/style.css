@@ -62,6 +62,12 @@ ul, ol, li, menu {
     border-color: #23272a;
 }
 
+.button.lightpurple {
+    color: white;
+    background-color: #7a90dc;
+    border-color: #7a90dc;
+}
+
 .header,
 .hero-banner {
     color: white;
@@ -125,8 +131,46 @@ ul, ol, li, menu {
 .col-hero h1 {
     font-size: 36px;
 }
-
 /* fine hero-banner */
+
+
+/* main content */
+.col-60 {
+    flex-basis: 60%;
+}
+
+.col-40 {
+    flex-basis: 40%;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.bg-reverse {
+    background-color: #f5f5f5;
+}
+
+.main h1 {
+    padding-bottom: 20px;
+    font-size: 36px;
+}
+
+.main.big-content {
+    text-align: center;
+}
+
+.main h3 {
+    padding: 30px;
+    background-image: url(../img/discord-assets/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* fine main content */
+
+
+
 
 
 
