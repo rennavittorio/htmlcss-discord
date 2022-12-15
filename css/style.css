@@ -23,6 +23,10 @@ ul, ol, li, menu {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* fine reset rules */
 
 
@@ -92,7 +96,8 @@ ul, ol, li, menu {
 }
 
 .header,
-.hero-banner {
+.hero-banner,
+.footer-info {
     color: white;
 }
 /* fine general rules */
@@ -214,5 +219,32 @@ ul, ol, li, menu {
 .footer-end .line {
     flex-grow: 1;
 }
+
+.footer-text > .col {
+    flex-basis: 100%;
+}
+
+.footer-large-text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.purple-text {
+    color: #7a90dc;
+}
+
+.footer-lang img {
+    max-height: 16px;
+}
+
+.footer-social {
+    gap: 0 10px;
+}
+
+.footer-social a {
+    color: #f5f5f5;
+}
+
 
 /* fine footer section */
