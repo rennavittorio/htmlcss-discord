@@ -5,6 +5,16 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h1,
+h3 {
+    font-weight: 700;
+    line-height: 1em;
+}
+
 img, svg {
     max-width: 100%;
 }
