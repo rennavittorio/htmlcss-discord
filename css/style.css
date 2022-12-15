@@ -33,6 +33,18 @@ ul, ol, li, menu {
 
 
 /* general rules */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.container-small {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
 .row {
     display: flex;
 }
@@ -103,12 +115,6 @@ ul, ol, li, menu {
 
 
 /* hero-banner */
-.container-small {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 15px;
-}
-
 .hero-banner {
     background-image: url(../img/discord-assets/jumbo.png);
     background-size: cover;
@@ -170,48 +176,6 @@ ul, ol, li, menu {
 /* fine main content */
 
 
-
-
-
-
-
-/* high-level layout rules */
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 15px;
-}
-
-.home-main {
-    min-height: 500px;
-}
-
-.home-footer {
-    min-height: 250px;
-}
-/* fine layout rules */
-
-/* layout main (3 double-col sections + 1 mono-col) */
-.row-main-2-col > .col-text {
-    flex-basis: calc(100% / 3);
-    min-height: 200px;
-}
-
-.row-main-2-col > .col-img {
-    flex-basis: calc((100% / 3) * 2);
-    min-height: 200px;
-}
-
-.row-main-1-col > .col {
-    flex-basis: 100%;
-    min-height: 200px;
-}
-
-.bg-main:nth-child(odd) {
-    background-color: white;
-}
-
-/* fine layout main
 
 /* layout footer, 2 sections (1 info section, 1 logo+button) */
 .bg-foot {
