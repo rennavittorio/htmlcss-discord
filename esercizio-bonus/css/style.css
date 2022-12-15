@@ -1,0 +1,299 @@
+/* reset rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h1,
+h3 {
+    font-weight: 700;
+    line-height: 1em;
+}
+
+img, svg {
+    max-width: 100%;
+}
+
+ul, ol, li, menu {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* fine reset rules */
+
+
+
+/* debugging section */
+.debug .container {
+    border: 2px dashed tomato;
+    padding: 15px;
+}
+
+.debug .row, .debug .col {
+    border: 2px dashed cornflowerblue;
+    padding: 15px;
+}
+
+/* fine debugging section */
+
+
+
+/* general rules */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.container-small {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.row {
+    display: flex;
+}
+
+.row.reverse {
+    flex-direction: row-reverse;
+}
+
+.button {
+    text-align: center;
+    font-size: 12px;
+    line-height: 0;
+    border: 1px solid black;
+    height: 25px;
+    border-radius: 50px 50px;
+    padding: 15px 10px;
+}
+
+.button.white {
+    color: #23272a;
+    background-color: white;
+    border-color: white;
+}
+
+.button.darkgrey {
+    color: white;
+    background-color: #23272a;
+    border-color: #23272a;
+}
+
+.button.lightpurple {
+    color: white;
+    background-color: #7a90dc;
+    border-color: #7a90dc;
+}
+
+.header,
+.hero-banner,
+.footer-info {
+    color: white;
+}
+/* fine general rules */
+
+
+
+/* navbar rules */
+.hero-banner {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.bg-header {
+    background-color: #255ee9;
+}
+
+.row.row-header {
+    justify-content: space-between;
+    align-items: center;
+    gap: 0 50px;
+}
+
+.row.row-header > .col {
+    flex-basis: 100px;
+}
+
+.row.row-header > .col-nav {
+    flex-grow: 1;
+}
+
+.ul-nav {
+    display: flex;
+    justify-content: space-around;
+}
+/* fine navbar rules */
+
+
+/* hero-banner */
+
+.hero-banner {
+    background-image: url(../img/discord-assets/jumbo.png);
+    background-size: cover;
+}
+
+.hero-banner .row-hero {
+    text-align: center;
+}
+
+.col-hero > * {
+    padding: 10px 0;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    gap: 0 30px;
+}
+
+.col-hero h1 {
+    font-size: 36px;
+}
+/* fine hero-banner */
+
+
+/* main content */
+.main .row {
+    align-items: center;
+    padding: 30px 0;
+}
+
+.col-60 {
+    flex-basis: 60%;
+}
+
+.col-40 {
+    flex-basis: 40%;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.bg-reverse {
+    background-color: #f5f5f5;
+}
+
+/**********************
+esercizio bonus
+***********************/
+.wave {
+    position: relative;
+    z-index: -1;
+    bottom: -25px;
+}
+
+.wave-reverse {
+    transform: rotate(180deg);
+    bottom: 25px;
+}
+/**********************
+fine esercizio bonus
+***********************/
+
+
+.main h1 {
+    padding-bottom: 20px;
+    font-size: 36px;
+}
+
+.main.big-content {
+    text-align: center;
+}
+
+.main h3 {
+    padding: 30px;
+    background-image: url(../img/discord-assets/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* fine main content */
+
+
+
+/* footer section */
+.footer {
+    padding: 30px 0;
+}
+
+.footer-text,
+.footer-lang,
+.footer-social {
+    padding-bottom: 10px;
+}
+
+.bg-footer {
+    background-color: #23272a;
+}
+
+.col-33 {
+    flex-basis: calc(100% / 3);
+}
+
+.col-16 {
+    flex-basis: calc(100% / 6);
+}
+
+.footer-text > .col {
+    flex-basis: 100%;
+}
+
+.footer-large-text {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+.purple-text {
+    color: #7a90dc;
+}
+
+.footer-lang img {
+    max-height: 16px;
+    padding-right: 10px;
+}
+
+.footer-social {
+    gap: 0 10px;
+}
+
+.footer-social a {
+    color: #f5f5f5;
+}
+
+.col-16 > ul > li {
+    line-height: 2em;
+    font-weight: 700;
+}
+
+.footer-purple-li {
+    color: #7a90dc;
+}
+
+.footer-end .row {
+    justify-content: space-between;
+}
+
+.footer-end .row > .col {
+    flex-basis: 100px;
+    border-top: 2px solid #f5f5f5;
+    padding-top: 20px;
+}
+
+.footer-end .line {
+    flex-grow: 1;
+}
+
+/* fine footer section */
