@@ -28,10 +28,6 @@ ul, ol, li, menu {
     padding: 15px;
 }
 
-.debug header {
-    background-color: cyan;
-}
-
 /* fine debugging section */
 
 
@@ -44,11 +40,41 @@ ul, ol, li, menu {
 .row.reverse {
     flex-direction: row-reverse;
 }
+
+.button {
+    text-align: center;
+    line-height: 0;
+    border: 1px solid black;
+    height: 25px;
+    border-radius: 50px 50px;
+    padding: 15px 10px;
+}
+
+.button.white {
+    color: #23272a;
+    background-color: white;
+    border-color: white;
+}
+
+.button.darkgrey {
+    color: white;
+    background-color: #23272a;
+    border-color: #23272a;
+}
+
+.header,
+.hero-banner {
+    color: white;
+}
 /* fine general rules */
 
 
 
 /* navbar rules */
+.bg-header {
+    background-color: #255ee9;
+}
+
 .row.row-header {
     justify-content: space-between;
     align-items: center;
@@ -67,16 +93,42 @@ ul, ol, li, menu {
     display: flex;
     justify-content: space-around;
 }
-
-.login-button {
-    text-align: center;
-    line-height: 25px;
-    border: 1px solid black;
-    width: 100%;
-    height: 25px;
-    border-radius: 50px 50px;
-}
 /* fine navbar rules */
+
+
+/* hero-banner */
+.container-small {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.hero-banner {
+    background-image: url(../img/discord-assets/jumbo.png);
+    background-size: cover;
+}
+
+.hero-banner .row-hero {
+    text-align: center;
+}
+
+.col-hero > * {
+    padding: 10px 0;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    gap: 0 30px;
+}
+
+.col-hero h1 {
+    font-size: 36px;
+}
+
+/* fine hero-banner */
+
+
 
 
 /* high-level layout rules */
@@ -94,29 +146,6 @@ ul, ol, li, menu {
     min-height: 250px;
 }
 /* fine layout rules */
-
-/* layout header (2 sec: nav + header) */
-.bg-header {
-    background-color: cyan;
-}
-
-.row-nav {
-    justify-content: space-between;
-    text-align: center;
-}
-
-.row-nav > .col-links {
-    flex-grow: 1;
-}
-
-.row-nav > .col:not(.col-links) {
-    flex-basis: calc(100% / 5);
-}
-
-.row-header{
-    justify-content: center;
-}
-/* fine layout header */
 
 /* layout main (3 double-col sections + 1 mono-col) */
 .row-main-2-col > .col-text {
@@ -138,7 +167,7 @@ ul, ol, li, menu {
     background-color: white;
 }
 
-/* fine layout main */
+/* fine layout main
 
 /* layout footer, 2 sections (1 info section, 1 logo+button) */
 .bg-foot {
