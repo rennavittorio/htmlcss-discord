@@ -293,6 +293,9 @@ fine esercizio bonus
     font-weight: 700;
 }
 
+
+/* selettore lang
+questo metodo è utile anche per le searchbar */
 .widget-lang {
     background-image: url(../img/discord-assets/ita.png);
     background-size: auto 100%;
@@ -307,6 +310,8 @@ fine esercizio bonus
     border: none;
     padding: 0 5px 0 35px;
 }
+/* selettore lang
+questo metodo è utile anche per le searchbar */
 
 .footer-purple-li {
     color: #7a90dc;
