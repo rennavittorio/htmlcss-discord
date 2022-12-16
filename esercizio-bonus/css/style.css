@@ -129,9 +129,16 @@ a {
     flex-grow: 1;
 }
 
-.ul-nav {
+.menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+}
+/* per la nav meglio soluzione no gap, così è tutto cliccabile
+e aiuta per hover effects */
+
+.menu .menu-item {
+    padding: 0 10px;
+    line-height: 34px;
 }
 /* fine navbar rules */
 
