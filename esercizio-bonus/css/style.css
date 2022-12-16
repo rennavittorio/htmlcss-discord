@@ -293,6 +293,21 @@ fine esercizio bonus
     font-weight: 700;
 }
 
+.widget-lang {
+    background-image: url(../img/discord-assets/ita.png);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+
+}
+
+.widget-lang select {
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 0 5px 0 35px;
+}
+
 .footer-purple-li {
     color: #7a90dc;
 }
